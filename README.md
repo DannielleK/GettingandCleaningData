@@ -37,7 +37,6 @@ names(singleDataSet) <- gsub('Acc',"Acceleration",names(singleDataSet))
       names(singleDataSet) <- gsub('\\.std',".StandardDeviation",names(singleDataSet))
       names(singleDataSet) <- gsub('Freq\\.',"Frequency.",names(singleDataSet))
       names(singleDataSet) <- gsub('Freq$',"Frequency",names(singleDataSet))
-      
       View(singleDataSet)
 names(singleDataSet)
 Data2 <- aggregate(. ~Subject + Activity, singleDataSet, mean)
